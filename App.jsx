@@ -59,8 +59,8 @@ export default function App() {
   return (
     <>
       <StatusBar style='light' />
-      {/* <Provider store={store}> */}
-        <FavoritesContextProvider>
+      <Provider store={store}>
+        {/* <FavoritesContextProvider> */}
         <View style={styles.container}>
           <NavigationContainer>
             <Stack.Navigator
@@ -93,8 +93,8 @@ export default function App() {
             </Stack.Navigator>
           </NavigationContainer>
         </View>
-        </FavoritesContextProvider>
-      {/* </Provider> */}
+        {/* </FavoritesContextProvider> */}
+      </Provider>
     </>
   );
 }
